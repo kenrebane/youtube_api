@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <head>
+    <title>Search youtube</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Search<span>Vidz.</span></h1>
+        <p>Search YouTube for videos</p>
+      </header>
+      <section>
+        <form id="search_form" name="search_form" onsubmit="return search()">
+          <div class="fieldContainer">
+            <input type="search" id="query" class="searchField" placeholder="Search YouTube..." />
+            <input type="submit" name="searchBtn" id="searchBtn" value="" />
+          </div>
+        </form>
+      </section>
+        <ul id="results"></ul>
+        <div id="buttons"></div>
+        <footer>
+          <p>Copyright &copy; 2018. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="functions.js"></script>
+  </body>
+</html>
