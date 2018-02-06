@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $(".fancybox").fancybox();
+
   //Searchbar handler
   var field = $("#query"),
       btn = $("#searchBtn"),
@@ -16,7 +16,7 @@ $(document).ready(function() {
       right: "1vw"
     }, speed);
   });
-  
+
   //Blur event handler
   $(field).on("blur", function() {
     if ( field.val() === "" ) {
