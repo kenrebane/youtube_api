@@ -16,7 +16,7 @@ $(document).ready(function() {
       right: "1vw"
     }, speed);
   });
-  field.focus();
+  
   //Blur event handler
   $(field).on("blur", function() {
     if ( field.val() === "" ) {
