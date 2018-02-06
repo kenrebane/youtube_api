@@ -54,7 +54,7 @@ function search() {
       type: "video",
       key: "AIzaSyAwGdcl9VnjOoORzEfF8ZfeArlLPXbbl2Y"},
       function(data) {
-        console.log(data);
+
         var nextPageToken = data.nextPageToken,
             prevPageToken = data.prevPageToken;
 
@@ -97,7 +97,7 @@ function nextPage() {
       type: "video",
       key: "AIzaSyAwGdcl9VnjOoORzEfF8ZfeArlLPXbbl2Y"},
       function(data) {
-        console.log(data);
+        
         var nextPageToken = data.nextPageToken,
             prevPageToken = data.prevPageToken;
 
@@ -139,7 +139,7 @@ function prevPage() {
         type: "video",
         key: "AIzaSyAwGdcl9VnjOoORzEfF8ZfeArlLPXbbl2Y"},
         function(data) {
-          console.log(data);
+
           var nextPageToken = data.nextPageToken,
               prevPageToken = data.prevPageToken;
 
@@ -168,7 +168,7 @@ function getOutput(item) {
       date = item.snippet.publishedAt;
 
       //Output string
-      console.log(thumb);
+
       var output = "<li>" +
                      "<div class='list-left'>" +
                        "<img src=" + thumb + ">" +
@@ -180,7 +180,7 @@ function getOutput(item) {
                      "</div>" +
                    "</li>" +
                    "<div class='clearfix'></div>";
-                   console.log("https://www.youtube.com/embed/"+String(id));
+
 
       return output;
 
